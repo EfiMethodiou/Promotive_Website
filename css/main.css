@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+body {
+  background-color: whitesmoke;
+}
+h1, h3, p{
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 5vw;
+    background-color: lightgray;  
+    text-align: center;
+}
+header h1{
+    margin: 1% 0;      
+}
+
+.flags{    
+    position: absolute;  
+  width: 1.8%;
+  float: right;
+  right: 1%;
+  cursor: pointer;
+}
+.flags img{
+    width: 95%;
+}
