@@ -5,23 +5,53 @@
     <title>GRAMMENOS TRUCKS</title>
     <meta charset="UTF.8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/logo.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/head_foot.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
     <header>
+        <span id="logoim"><a href="#home"><img src="../img/logo.png"></span></a>
         <h1>Grammenos Trucks</h1>
         <div class="flags">
-            <th>
-                <tr><img src="https://www.countryflags.io/gr/flat/64.png"></tr>
-                <tr><img src="https://www.countryflags.io/gb/flat/64.png"></tr>
-            </th>
-            
+            <table>
+                <tr>
+                    <td><img style="cursor: pointer;" onclick="gotoGr()"
+                            src="https://www.countryflags.io/gr/flat/64.png"></td>
+                    <td><img style="cursor: default;" src="https://www.countryflags.io/gb/flat/64.png"></td>
+                </tr>
+            </table>
         </div>
     </header>
+    <div class="main">
+        <div id="home">
+            <div class="slideshow-container">
+                <div class="mySlides">
+                    <img src="../img/slider1en.png" style="width:100%">
+                </div>
 
+                <div class="mySlides">
+                    <img src="../img/slider2en.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <img src="../img/slider3en.png" style="width:100%">
+                </div>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../script.js"></script>
 </body>
 
 </html>

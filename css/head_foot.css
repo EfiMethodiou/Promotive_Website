@@ -1,0 +1,112 @@
+/*
+HEADER
+*/
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 5vw;
+  min-height: 50px;
+  background-color: #9d9d9d;
+  text-align: center;
+
+  -webkit-box-shadow: 0 8px 6px -6px #292828;
+  -moz-box-shadow: 0 8px 6px -6px #292828;
+  box-shadow: 0 8px 6px -6px #292828;
+}
+
+header h1 {
+  margin: 1vw 0;
+  color: #e0c24b;
+}
+
+#logoim {
+  position: absolute;
+  float: left;
+  left: 2%;
+  margin-top: 0.2vw;
+}
+
+#logoim img {
+  width: 4.5vw;
+}
+
+.flags {
+  position: absolute;
+  width: 1.8%;
+  float: right;
+  right: 5%;
+  margin-top: -3.5%;
+}
+
+.flags img {
+  width: 2vw;
+}
+@media screen and (min-width: 1400px) {
+  header h1 {
+    margin: 1.2vw 0;
+  }
+  .flags {
+    margin-top: -3%;
+  }
+}
+@media screen and (max-width: 800px) {
+  #logoim img {
+    width: 6vw;
+  }
+  .flags {
+    right: 6%;
+    margin-top: -5%;
+  }
+  .flags img {
+    width: 3vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  #logoim img {
+    width: 7vw;
+  }
+  .flags {
+    right: 7%;
+    margin-top: -6%;
+  }
+  .flags img {
+    width: 3.8vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  #logoim img {
+    width: 9vw;
+  }
+  .flags {
+    right: 8%;
+    margin-top: -6%;
+  }
+  .flags img {
+    width: 4.2vw;
+  }
+}
+@media screen and (max-width: 400px) {
+  header h1 {
+    font-size: 7vw;
+  }
+  #logoim {
+    margin-top: 1%;
+  }
+  #logoim img {
+    width: 10vw;
+  }
+  .flags {
+    right: 12%;
+    margin-top: -5%;
+  }
+  .flags img {
+    width: 6vw;
+  }
+}
+
+/*
+FOOTER
+*/
