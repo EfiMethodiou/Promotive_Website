@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/head_foot.css">
-    <link rel="stylesheet" href="css/main.css">   
-    
+    <link rel="stylesheet" href="css/main.css">
+
 </head>
 
 <body>
@@ -27,6 +27,7 @@
             </table>
         </div>
     </header>
+    <div id="galBackgr" onclick="closeGallery()"></div>
     <div class="main">
         <div id="home">
             <div class="slideshow-container">
@@ -54,36 +55,68 @@
             <!--SERVICES-->
             <h4>Εκσκαφές και Μεταφορές - Γραμμένος Νικόλαος</h4>
             <div class="servLis">
-                <span>Υπηρεσίες</span>
-                <table>
-                    <tr>
-                        <td>
-                            <ul>
-                                <li>Εκσκαφές/ Επιχώσεις</li>
-                                <li>Κτηριακά έργα</li>
-                                <li>Διαχείριση αδρανών υλικών</li>
-                                <li>Κατεδαφίσεις/Καθαιρέσεις</li>
-                                <li>Έργα οδοποιίας</li>
-                                <li>Έργα υποδομών</li>
-                                <li>Εκσκαφές σε μεγάλα βάθη και περιορισμένους χώρους</li>
-                            </ul>
-                        </td>
-                        <td>
-                            <ul id="secList">
-                                <li>Μπαζώματα </li>
-                                <li>Καθάρισμα οικοπέδων</li>
-                                <li>Εκβραχισμοί</li>
-                                <li>Συγκομιδή μπαζών</li>
-                                <li>Μεταφορές</li>
-                                <li>Μετακομίσεις</li>
-                                <li>Διαμόρφωση εξωτερικών χώρων</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </table>
+                <span id="subtitl">Υπηρεσίες</span>
+                <div id="theLists">
+                    <span>
+                        <ul>
+                            <li>Εκσκαφές/ Επιχώσεις</li>
+                            <li>Κτηριακά έργα</li>
+                            <li>Διαχείριση αδρανών υλικών</li>
+                            <li>Κατεδαφίσεις/Καθαιρέσεις</li>
+                            <li>Έργα οδοποιίας</li>
+                            <li>Έργα υποδομών</li>
+                            <li>Εκσκαφές σε μεγάλα βάθη και περιορισμένους χώρους</li>
+                        </ul>
+                    </span>
+                    <span id="secList">
+                        <ul>
+                            <li>Μπαζώματα </li>
+                            <li>Καθάρισμα οικοπέδων</li>
+                            <li>Εκβραχισμοί</li>
+                            <li>Συγκομιδή μπαζών</li>
+                            <li>Μεταφορές</li>
+                            <li>Μετακομίσεις</li>
+                            <li>Διαμόρφωση εξωτερικών χώρων</li>
+                        </ul>
+                    </span>
+
+                </div>
             </div>
         </div>
-        <div></div>
+
+        <div class="gallery-container">
+            <span>Στόλος</span><!--Our Fleet-->
+            <div class="thegallery">
+                <div class="gallery-grid">
+                    <img onclick="enlargeImg1()" class="gallery-img" src="img/gall/gallery1.jpg">
+
+                    <img onclick="enlargeImg2()" class="gallery-img" src="img/gall/gallery3.jpg" style="width: 12.5vw;">
+
+                    <img onclick="enlargeImg3()" class="gallery-img" src="img/gall/gallery4.jpg" style="width: 15vw;">
+
+                    <img onclick="enlargeImg4()" class="gallery-img" src="img/gall/gallery6.jpg" style="width: 15vw;">
+
+                    <img onclick="enlargeImg5()" class="gallery-img" src="img/gall/gallery5.jpg">
+
+                    <img onclick="enlargeImg6()" class="gallery-img" src="img/gall/gallery2.jpg">
+                </div>
+            </div>
+            <div class="bigDisplay">
+                <img onclick="closeGallery()" id="img1" src="img/gall/gallery1.jpg">
+
+                <img onclick="closeGallery()" id="img2" src="img/gall/gallery3.jpg">
+
+                <img onclick="closeGallery()" id="img3" src="img/gall/gallery4.jpg">
+
+                <img onclick="closeGallery()" id="img4" src="img/gall/gallery6.jpg">
+
+                <img onclick="closeGallery()" id="img5" src="img/gall/gallery5.jpg">
+
+                <img onclick="closeGallery()" id="img6" src="img/gall/gallery2.jpg">
+
+            </div>
+        </div>
+
     </div>
 
 
