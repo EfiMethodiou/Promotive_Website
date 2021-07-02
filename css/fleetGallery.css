@@ -1,0 +1,179 @@
+/*
+PHOTO GALLERY
+*/
+#galBackgr {
+  position: absolute;
+  width: 100%;
+  height: 200vw;
+  overflow: hidden;
+  display: none;
+  z-index: 100;
+  background-color: rgb(0, 0, 0, 0.6);
+}
+
+.gallery-container {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+}
+.ourFleet {
+  position: relative;
+  margin: 0 40vw;
+  border-bottom: 3px solid #e0c24b;
+  width: 20vw;
+}
+.ourFleet span {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  align-content: center;
+  font-weight: 600;
+  font-size: 1.5vw;
+  margin-left: 7vw;
+}
+#fleeteng span{
+    margin-left: 6vw;
+}
+
+.thegallery {
+  margin: 5vw 12%;
+}
+
+.gallery-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15vw, 1fr));
+  grid-gap: 4vw;
+  justify-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* The Images */
+.gallery-img {
+  width: 19vw;
+  height: auto;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: opacity 0.25s ease-in-out;
+}
+#gal1 {
+  width: 17vw;
+}
+#gal2 {
+  width: 12.5vw;
+}
+#gal3,
+#gal4 {
+  width: 15vw;
+}
+#gal7 {
+  height: 14vw;
+}
+#gal8 {
+  width: 18vw;
+  height: 14vw;
+}
+
+.gallery-img:hover {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.bigDisplay {
+  margin: -46vw 35%;
+  width: fit-content;
+}
+.bigDisplay img {
+  position: relative;
+  border-radius: 10px;
+  width: 30vw;
+  z-index: 100;
+}
+#img1,
+#img2,
+#img3,
+#img4,
+#img5,
+#img6,
+#img7,
+#img8 {
+  display: none;
+}
+#img2 {
+  width: 25vw;
+  margin-left: 20%;
+}
+#img5,
+#img6 {
+  width: 35vw;
+  margin-top: 10vw;
+}
+#img7 {
+  width: 40vw;
+  margin-left: -5vw;
+  margin-top: 10vw;
+}
+#img8 {
+  width: 27vw;
+  margin-left: 1vw;
+}
+
+@media screen and (max-width: 500px) {
+  .ourFleet span {
+    font-size: 3.2vw;
+    margin-left: 5vw;
+  }
+  #fleeteng span{
+      margin-left: 3.4vw;
+  }
+  #galBackgr {
+    height: 300vh;    
+  } 
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(16vw, 1fr));
+    grid-gap: 15vw;
+  }
+  .gallery-img {
+    width: 30vw;
+  }
+  /*small images*/
+  #gal1 {
+    width: 25vw;
+  }
+  #gal2 {
+    width: 19vw;
+  }
+  #gal3 {
+    width: 22vw;
+  }
+  #gal4 {
+    width: 22vw;
+  }
+  #gal7 {
+    width: 30vw;
+    height: 20vw;
+  }
+  #gal8 {
+    width: 30vw;
+    height: 20vw;
+  }
+
+  /*enlanged images*/
+  #img1,
+  #img3,
+  #img4,
+  #img5,
+  #img6,
+  #img7 {
+    width: 70vw;
+    margin: -120vw -20vw;
+  }
+  #img2,
+  #img8 {
+    width: 60vw;
+    margin-top: -120vw;
+    margin-left: -15vw;
+  }
+}

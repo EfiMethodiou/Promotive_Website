@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/head_foot.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fleetGallery.css">
 
 </head>
 
@@ -51,6 +52,7 @@
             </div>
         </div>
 
+        <!--SERVICES-->
         <div class="servPart">
             <!--SERVICES-->
             <h4>Εκσκαφές και Μεταφορές - Γραμμένος Νικόλαος</h4>
@@ -84,21 +86,26 @@
             </div>
         </div>
 
+        <!--THE FLEET GALLERY-->
         <div class="gallery-container">
-            <span>Στόλος</span><!--Our Fleet-->
+            <div class="ourFleet">
+                <span>Στόλος</span>
+            </div>
             <div class="thegallery">
                 <div class="gallery-grid">
-                    <img onclick="enlargeImg1()" class="gallery-img" src="img/gall/gallery1.jpg">
+                    <img onclick="enlargeImg1()" class="gallery-img" id="gal1" src="img/gall/gallery1.jpg">
 
-                    <img onclick="enlargeImg2()" class="gallery-img" src="img/gall/gallery3.jpg" style="width: 12.5vw;">
+                    <img onclick="enlargeImg2()" class="gallery-img" id="gal2" src="img/gall/gallery3.jpg">
 
-                    <img onclick="enlargeImg3()" class="gallery-img" src="img/gall/gallery4.jpg" style="width: 15vw;">
+                    <img onclick="enlargeImg3()" class="gallery-img" id="gal3" src="img/gall/gallery4.jpg">
 
-                    <img onclick="enlargeImg4()" class="gallery-img" src="img/gall/gallery6.jpg" style="width: 15vw;">
+                    <img onclick="enlargeImg4()" class="gallery-img" id="gal4" src="img/gall/gallery6.jpg">
 
-                    <img onclick="enlargeImg5()" class="gallery-img" src="img/gall/gallery5.jpg">
+                    <img onclick="enlargeImg5()" class="gallery-img" id="gal5" src="img/gall/gallery5.jpg">
 
-                    <img onclick="enlargeImg6()" class="gallery-img" src="img/gall/gallery2.jpg">
+                    <img onclick="enlargeImg6()" class="gallery-img" id="gal6" src="img/gall/gallery2.jpg">
+                    <img onclick="enlargeImg7()" class="gallery-img" id="gal7" src="img/gall/gallery7.jpg">
+                    <img onclick="enlargeImg8()" class="gallery-img" id="gal8" src="img/gall/gallery8.jpg">
                 </div>
             </div>
             <div class="bigDisplay">
@@ -114,7 +121,16 @@
 
                 <img onclick="closeGallery()" id="img6" src="img/gall/gallery2.jpg">
 
+                <img onclick="closeGallery()" id="img7" src="img/gall/gallery7.jpg">
+
+                <img onclick="closeGallery()" id="img8" src="img/gall/gallery8.jpg">
+
             </div>
+        </div>
+        
+        <!--ANIMATED MESSAGES-->
+        <div class="animMessages" id="animMessages">
+
         </div>
 
     </div>
