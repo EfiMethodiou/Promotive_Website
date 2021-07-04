@@ -30,8 +30,8 @@ PHOTO GALLERY
   font-size: 1.5vw;
   margin-left: 7vw;
 }
-#fleeteng span{
-    margin-left: 6vw;
+#fleeteng span {
+  margin-left: 6vw;
 }
 
 .thegallery {
@@ -76,6 +76,7 @@ PHOTO GALLERY
 }
 
 .gallery-img:hover {
+  box-shadow: 10px 10px 5px rgb(0, 0, 0, 0.5);
   -ms-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
@@ -125,12 +126,12 @@ PHOTO GALLERY
     font-size: 3.2vw;
     margin-left: 5vw;
   }
-  #fleeteng span{
-      margin-left: 3.4vw;
+  #fleeteng span {
+    margin-left: 3.4vw;
   }
   #galBackgr {
-    height: 300vh;    
-  } 
+    height: 300vh;
+  }
   .gallery-grid {
     grid-template-columns: repeat(auto-fit, minmax(16vw, 1fr));
     grid-gap: 15vw;

@@ -110,3 +110,13 @@ header h1 {
 /*
 FOOTER
 */
+footer{
+  width: 100%;
+  position: absolute;
+  margin-top: 100%; 
+  left: 0; 
+  height: 12vw;
+  min-height: 50px;
+  background-color: rgb(157, 157, 157, 0.5);
+  text-align: center; 
+}
