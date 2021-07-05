@@ -52,49 +52,58 @@ function closeGallery() {
   img7.style.display = "none";
   img8.style.display = "none";
   document.getElementById("galBackgr").style.display = "none";
-  document.getElementById("animMessages").style.marginTop = "50vw";
+  document.getElementById("animMessages").style.display = "block";  
+  document.getElementById("footer").style.display = "block"; 
 }
 
 function enlargeImg1() {
   img1.style.display = "block";
   document.getElementById("galBackgr").style.display = "block";
-  document.getElementById("animMessages").style.marginTop = "65vw";
+  document.getElementById("animMessages").style.display = "none";
+  document.getElementById("footer").style.display = "none";
 }
 function enlargeImg2() {
   img2.style.display = "block";
   document.getElementById("galBackgr").style.display = "block";
-  document.getElementById("animMessages").style.marginTop = "55vw";
+  document.getElementById("animMessages").style.display = "none"; 
+  document.getElementById("footer").style.display = "none";  
 }
 function enlargeImg3() {
   img3.style.display = "block";
   document.getElementById("galBackgr").style.display = "block";
-  document.getElementById("animMessages").style.marginTop = "55vw";
+  document.getElementById("animMessages").style.display = "none";
+  document.getElementById("footer").style.display = "none";
 }
 function enlargeImg4() {
   img4.style.display = "block";
   document.getElementById("galBackgr").style.display = "block";
-  document.getElementById("animMessages").style.marginTop = "55vw";
+  document.getElementById("animMessages").style.display = "none";  
+  document.getElementById("footer").style.display = "none";
 }
 function enlargeImg5() {
   img5.style.display = "block";
   document.getElementById("galBackgr").style.display = "block";
-  document.getElementById("animMessages").style.marginTop = "65vw";
+  document.getElementById("animMessages").style.display = "none";
+  document.getElementById("footer").style.display = "none";
 }
 function enlargeImg6() {
   img6.style.display = "block";
   document.getElementById("galBackgr").style.display = "block";
-  document.getElementById("animMessages").style.marginTop = "65vw";
+  document.getElementById("animMessages").style.display = "none";
+  document.getElementById("footer").style.display = "none"; 
 }
 function enlargeImg7() {
   img7.style.display = "block";
   document.getElementById("galBackgr").style.display = "block";
-  document.getElementById("animMessages").style.marginTop = "65vw";
+  document.getElementById("animMessages").style.display = "none"; 
+  document.getElementById("footer").style.display = "none"; 
 }
 
 function enlargeImg8() {
   img8.style.display = "block";
   document.getElementById("galBackgr").style.display = "block";
-  document.getElementById("animMessages").style.marginTop = "55vw";
+  document.getElementById("animMessages").style.display = "none";
+  document.getElementById("footer").style.display = "none";
 }
 
 /*
