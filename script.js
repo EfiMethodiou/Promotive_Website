@@ -109,21 +109,26 @@ function enlargeImg8() {
 /*
 4 SECTION MESSAGES ANIMATION
 */
-function section4Anim() {
-  console.log("hello");
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      const square = entry.target.querySelector(".animMessages");
 
-      if (entry.isIntersecting) {
-        square.classList.add("animMessages-animation");
+document.addEventListener('scroll', function (e) {
+  var top  = window.pageYOffset + window.innerHeight,
+      isVisible = top > document.querySelector('.animMessages-wrapper > div').offsetTop;
+
+   if (isVisible) {
+    const observer = new IntersectionObserver(entries => {
+      console.log("hello");
+      entries.forEach(entry => {
+        const square = entry.target.querySelector('.animMessages');
+    
+        if (entry.isIntersecting) {
+          square.classList.add('animMessages-animation');
         return; // if we added the class, exit the function
-      }
-
-      // We're not intersecting, so remove the class!
-      square.classList.remove("animMessages-animation ");
+        }    
+        // We're not intersecting, so remove the class!
+        square.classList.remove('animMessages-animation');
+      });
     });
-  });
-
-  observer.observe(document.querySelector(".animMessages-wrapper"));
-}
+    
+    observer.observe(document.querySelector('.animMessages-wrapper'));
+   }
+});
