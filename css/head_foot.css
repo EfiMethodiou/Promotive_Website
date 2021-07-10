@@ -124,18 +124,20 @@ footer h4 {
   margin: 1vw 4vw;
   font-size: 1.5vw;
   color: #e0c24b;
-  text-shadow: -1px 0 rgb(0, 0, 0, 0.15), 0 1px rgb(0, 0, 0, 0.15), 1px 0 rgb(0, 0, 0, 0.15), 0 -1px rgb(0, 0, 0, 0.15);
+  text-shadow: -1px 0 rgb(0, 0, 0, 0.15), 0 1px rgb(0, 0, 0, 0.15),
+    1px 0 rgb(0, 0, 0, 0.15), 0 -1px rgb(0, 0, 0, 0.15);
   float: left;
 }
 #contact {
   position: absolute;
-  margin: 4vw 3vw;  
+  margin: 4vw 3vw;
   width: 25vw;
 }
 #contact i {
   color: #e0c24b;
   font-size: 1.3vw;
-  text-shadow: -1px 0 rgb(0, 0, 0, 0.1), 0 1px rgb(0, 0, 0, 0.1), 1px 0 rgb(0, 0, 0, 0.1), 0 -1px rgb(0, 0, 0, 0.1);
+  text-shadow: -1px 0 rgb(0, 0, 0, 0.1), 0 1px rgb(0, 0, 0, 0.1),
+    1px 0 rgb(0, 0, 0, 0.1), 0 -1px rgb(0, 0, 0, 0.1);
 }
 #contact td {
   font-size: 1.3vw;
@@ -149,32 +151,102 @@ footer h4 {
 #map {
   float: right;
 }
-#map img{
+#map img {
   margin-top: 0.5vw;
   margin-right: 2vw;
-   width: 14vw;
-   height: auto;   
-   text-orientation: sideways-right;
+  width: 14vw;
+  height: auto;
+  text-orientation: sideways-right;
 }
 #developer {
   float: left;
   font-size: 1.2vw;
 }
 
-#developer img{
+#developer img {
   width: 1.5vw;
-  margin: 0;  
+  margin: 0;
 }
-
 
 @media screen and (max-width: 800px) {
   footer {
-  border: 2px solid red;
+    height: 15vw;
+  }
+  footer h4 {
+    font-size: 2vw;
+  }
+  #contact {
+    width: 35vw;
+  }
+  #contact i {
+    font-size: 1.5vw;
+  }
+  #contact td {
+    font-size: 1.5vw;
+  }
+  #map img {
+    width: 18vw;
+  }
+  #developer {
+    font-size: 1.5vw;
+  }
+  #developer img {
+    width: 2vw;
   }
 }
 
 @media screen and (max-width: 500px) {
-  footer {
+  footer {    
     margin-top: 100vw;
+    height: 35vw;
+  } 
+  footer h4 {
+    font-size: 4vw;
+  }
+  #contact {
+    margin-top: 10vw;    
+    width: 45vw;
+  }
+  #contact i {
+    font-size: 2.5vw;
+  }
+  #contact td {
+    font-size: 2.5vw;
+  }
+  #map img {
+    width: 45vw;
+  }
+  #developer {
+    margin-right: 2vw;
+    float: right;
+    font-size: 2.5vw;
+  }
+  #developer img {
+    width: 3vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  footer {   
+    height: 38vw;  
+  } 
+  #contact {
+    margin-top: 10vw;  
+    margin-left: 1vw;  
+    width: 55vw;
+  }
+  #contact i {
+    font-size: 3vw;
+  }
+  #contact td {
+    padding: 2px 8px;
+    font-size: 3vw;
+  }
+  #developer {
+    margin-right: 2vw;    
+    font-size: 3vw;
+  }
+  #developer img {
+    width: 3.5vw;
   }
 }
