@@ -110,19 +110,71 @@ header h1 {
 /*
 FOOTER
 */
-footer{
+footer {
   width: 100%;
   position: absolute;
-  margin-top: 100%; 
-  left: 0; 
-  height: 12vw;
+  margin-top: 100%;
+  left: 0;
+  height: 11vw;
   min-height: 50px;
-  background-color: rgb(157, 157, 157, 0.5);
-  text-align: center; 
+  background-color: rgb(157, 157, 157, 0.8);
+  text-align: center;
+}
+footer h4 {
+  margin: 1vw 4vw;
+  font-size: 1.5vw;
+  color: #e0c24b;
+  text-shadow: -1px 0 rgb(0, 0, 0, 0.15), 0 1px rgb(0, 0, 0, 0.15), 1px 0 rgb(0, 0, 0, 0.15), 0 -1px rgb(0, 0, 0, 0.15);
+  float: left;
+}
+#contact {
+  position: absolute;
+  margin: 4vw 3vw;  
+  width: 25vw;
+}
+#contact i {
+  color: #e0c24b;
+  font-size: 1.3vw;
+  text-shadow: -1px 0 rgb(0, 0, 0, 0.1), 0 1px rgb(0, 0, 0, 0.1), 1px 0 rgb(0, 0, 0, 0.1), 0 -1px rgb(0, 0, 0, 0.1);
+}
+#contact td {
+  font-size: 1.3vw;
+  float: left;
+  padding: 0px 10px;
+}
+#contact a {
+  color: black;
+  text-decoration: none;
+}
+#map {
+  float: right;
+}
+#map img{
+  margin-top: 0.5vw;
+  margin-right: 2vw;
+   width: 14vw;
+   height: auto;   
+   text-orientation: sideways-right;
+}
+#developer {
+  float: left;
+  font-size: 1.2vw;
+}
+
+#developer img{
+  width: 1.5vw;
+  margin: 0;  
+}
+
+
+@media screen and (max-width: 800px) {
+  footer {
+  border: 2px solid red;
+  }
 }
 
 @media screen and (max-width: 500px) {
-  footer{
+  footer {
     margin-top: 100vw;
   }
 }
