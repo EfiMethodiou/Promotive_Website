@@ -7,6 +7,7 @@ function gotoEng() {
 function gotoGr() {
   window.location.href = "../index.html";
 }
+
 /*PRELOAD SLIDER IMAGES */
 var image1 = new Image();
 var image2  = new Image();
@@ -14,6 +15,12 @@ var image3  = new Image();
 image1.src = "img/slider1gr.png";
 image2.src =  "img/slider2gr.png";
 image3.src =  "img/slider3gr.png";
+var image4 = new Image();
+var image5  = new Image();
+var image6  = new Image();
+image4.src = "img/slider1en.png";
+image5.src =  "img/slider2en.png";
+image6.src =  "img/slider3en.png";
 
 
 /*HOME SLIDER GALLERY*/
